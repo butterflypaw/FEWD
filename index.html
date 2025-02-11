@@ -1,0 +1,54 @@
+<!-- Serial number, name, image of student, button to upload cv only pdf(display name of file below), link to project details of the student (display in same page or another tab)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Serial No</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Upload CV</th>
+                <th>Project Details</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        const students = [
+            { name: "Aditya", img: "", link: "" },
+            { name: "Balu", img: "", link: "" },
+            { name: "Charan", img: "", link: "" }
+        ];
+        function showData() {
+            const tableBody = document.querySelector("tbody");
+            students.forEach((student, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${student.name}</td>
+                    <td><img src="${student.img}" alt="Image"></td>
+                    <td>
+                        <label>
+                            <input type="file" accept=".pdf" onchange="displayFileName(this)">
+                        </label>
+                        <p class="file-name"></p>
+                    </td>
+                    <td><a href="${student.link}" target="_blank">View Project</a></td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+        function displayFileName(input) {
+            const fileName = input.files.length ? input.files[0].name : "";
+            input.nextElementSibling.textContent = fileName;
+        }
+        document.addEventListener("DOMContentLoaded", showData);
+    </script>
+</body>
+</html>
