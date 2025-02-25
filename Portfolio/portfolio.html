@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithya Etoori</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    >
+    <style>
+        .section-container {
+            padding: 60px 0;
+        }
+        .bg-light-custom {
+            background-color: #f8f9fa;
+        }
+        .bg-primary-light {
+            background-color: #e6f2ff;
+        }
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .hero-section {
+            padding: 100px 0;
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: white;
+        }
+        .project-card {
+            height: 100%;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .social-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #4e54c8;
+            transition: color 0.3s ease;
+        }
+        .social-icon:hover {
+            color: #8f94fb;
+        }
+        .education-card {
+            border-left: 4px solid #4e54c8;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .carousel-caption {
+            background-color: rgba(0,0,0,0.7);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .skill-badge {
+            background-color: #4e54c8;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feedback">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO / INTRO SECTION -->
+    <section id="introduction" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Nithya Etoori</h1>
+                    <a href="#contact" class="btn btn-light btn-lg me-2">Contact Me</a>
+                    <a href="#projects" class="btn btn-outline-light btn-lg">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold mb-4">About Me</h2>
+                        <p class="lead">
+                            I am Nithya, a passionate and driven Computer Science undergraduate with a strong interest in 
+                            Artificial Intelligence, Machine Learning, and Full-Stack Development. 
+                            I enjoy solving complex problems through coding and have experience working on 
+                            AI-powered projects, drone-based automation, and scalable web applications. 
+                            My goal is to leverage technology to build impactful solutions that enhance efficiency and innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-container bg-light-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Skills</h2>
+                </div>
+            </div>
+            <!-- Skills Cards -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-code-slash text-primary" style="font-size: 2.5rem;"></i>
+                            <h4 class="mt-3">Languages</h4>
+                            <div class="mt-3">
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">Java</span>
+                                <span class="skill-badge">C++</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-database text-primary" style="font-size: 2.5rem;"></i>
+                            <h4 class="mt-3">Database</h4>
+                            <div class="mt-3">
+                                <span class="skill-badge">MySQL</span>
+                                <span class="skill-badge">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-globe text-primary" style="font-size: 2.5rem;"></i>
+                            <h4 class="mt-3">Web Technologies</h4>
+                            <div class="mt-3">
+                                <span class="skill-badge">HTML</span>
+                                <span class="skill-badge">CSS</span>
+                                <span class="skill-badge">Streamlit</span>
+                                <span class="skill-badge">Express.js</span>
+                                <span class="skill-badge">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-robot text-primary" style="font-size: 2.5rem;"></i>
+                            <h4 class="mt-3">Machine Learning</h4>
+                            <div class="mt-3">
+                                <span class="skill-badge">NumPy</span>
+                                <span class="skill-badge">Pandas</span>
+                                <span class="skill-badge">Scikit-Learn</span>
+                                <span class="skill-badge">TensorFlow</span>
+                                <span class="skill-badge">LLMs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Skills / Tools Row -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-tools text-primary" style="font-size: 2.5rem;"></i>
+                            <h4 class="mt-3">Software and Tools</h4>
+                            <div class="mt-3">
+                                <span class="skill-badge">Git</span>
+                                <span class="skill-badge">AWS</span>
+                                <span class="skill-badge">Docker</span>
+                                <span class="skill-badge">Kubernetes</span>
+                                <span class="skill-badge">Jenkins</span>
+                                <span class="skill-badge">Eclipse</span>
+                                <span class="skill-badge">Tomcat</span>
+                                <span class="skill-badge">Maven</span>
+                                <span class="skill-badge">Jupyter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Featured Projects</h2>
+                </div>
+            </div>
+            <!-- Carousel -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10">
+                    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button
+                              type="button"
+                              data-bs-target="#projectCarousel"
+                              data-bs-slide-to="0"
+                              class="active"
+                              aria-current="true"
+                              aria-label="Slide 1"
+                            ></button>
+                            <button
+                              type="button"
+                              data-bs-target="#projectCarousel"
+                              data-bs-slide-to="1"
+                              aria-label="Slide 2"
+                            ></button>
+                            <button
+                              type="button"
+                              data-bs-target="#projectCarousel"
+                              data-bs-slide-to="2"
+                              aria-label="Slide 3"
+                            ></button>
+                            <button
+                              type="button"
+                              data-bs-target="#projectCarousel"
+                              data-bs-slide-to="3"
+                              aria-label="Slide 4"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Thyroid Disease Detection Pipeline</h5>
+                                    <p>End-to-end pipeline using Python, Scikit-Learn, and MERN stack</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Text/Video Summarizer</h5>
+                                    <p>Using T5, LangChain, and Streamlit for automatic document and video summarization</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>AmEx Personalized Recommendations</h5>
+                                    <p>Built with Python, TensorFlow, Scikit-Learn, and Flutter</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>AI-based Drone Rescue System</h5>
+                                    <p>Using AI, Drone technology, and Jetson Xavier for disaster scenarios</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#projectCarousel"
+                          data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#projectCarousel"
+                          data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Cards -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Thyroid Disease Detection</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Python, Scikit-Learn, MERN</h6>
+                            <p class="card-text">
+                                Created an end-to-end pipeline to detect various types of thyroid diseases using Machine Learning.
+                            </p>
+                            <a
+                              href="https://github.com/butterflypaw/thyroidDetection"
+                              class="btn btn-sm btn-primary"
+                              target="_blank"
+                            >View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Text/Video Summarizer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">T5, LangChain, Streamlit</h6>
+                            <p class="card-text">
+                                Developed a tool for automatic summarization of documents and videos with push notifications for new YouTube content.
+                            </p>
+                            <a
+                              href="https://github.com/butterflypaw/Summarizer"
+                              class="btn btn-sm btn-primary"
+                              target="_blank"
+                            >View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">AmEx Personalized Recommendations</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Python, TensorFlow, Flutter</h6>
+                            <p class="card-text">
+                                Developed a system for personalized recommendations with advanced algorithms and mobile interface.
+                            </p>
+                            <a
+                              href="https://github.com/butterflypaw/Perks_Plus"
+                              class="btn btn-sm btn-primary"
+                              target="_blank"
+                            >View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">AI-based Drone Rescue System</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">AI, Drone, Jetson Xavier</h6>
+                            <p class="card-text">
+                                Developing a system for payload dropping using object recognition from drones for rescue operations.
+                            </p>
+                            <a
+                              href="https://github.com/butterflypaw/AI-based-payload-drop-using-drone"
+                              class="btn btn-sm btn-primary"
+                              target="_blank"
+                            >View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ACHIEVEMENTS SECTION (Carousel) -->
+    <section id="achievements" class="section-container bg-light-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Achievements</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Bootstrap Carousel for Achievements -->
+                    <div id="achievementsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+                            <!-- Slide 1: #include <her> Cohort 4.0 -->
+                            <div class="carousel-item active">
+                                <img
+                                  src="cohort.png"
+                                  class="d-block w-100"
+                                  alt="Cohort Achievement"
+                                  style="max-height:400px; object-fit:contain;"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>#include &lt;her&gt; Cohort 4.0</h5>
+                                    <p>An initiative by Reskilll, in collaboration with the Azure Developer Community</p>
+                                </div>
+                            </div>
+                            <!-- Slide 2: Bank of Baroda Hackathon -->
+                            <div class="carousel-item">
+                                <img
+                                  src="bob.jpg"
+                                  class="d-block w-100"
+                                  alt="Bank of Baroda Hackathon"
+                                  style="max-height:400px; object-fit:contain;"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Bank of Baroda Hackathon</h5>
+                                    <p>Selected for Level 1 out of 21,000 participants, in partnership with Microsoft Azure</p>
+                                </div>
+                            </div>
+                            <!-- Slide 3: Technical Club Recurse -->
+                            <div class="carousel-item">
+                                <img
+                                  src="recurse.jpg"
+                                  class="d-block w-100"
+                                  alt="Technical Club Recurse"
+                                  style="max-height:400px; object-fit:contain;"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Technical Club Recurse</h5>
+                                    <p>Member at Keshav Memorial Institute of Technology</p>
+                                </div>
+                            </div>
+                            <!-- Slide 4: Community Service (Scribe) -->
+                            <div class="carousel-item">
+                                <img
+                                  src="scribe.png"
+                                  class="d-block w-100"
+                                  alt="Community Service"
+                                  style="max-height:400px; object-fit:contain;"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Community Service</h5>
+                                    <p>Assisted as a Scribe for specially abled students by writing their exams on their behalf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Black Arrow Controls using Bootstrap Icons -->
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#achievementsCarousel"
+                          data-bs-slide="prev"
+                        >
+                            <span class="bi bi-chevron-left fs-1 text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#achievementsCarousel"
+                          data-bs-slide="next"
+                        >
+                            <span class="bi bi-chevron-right fs-1 text-black" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Education</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="education-card p-4 mb-4 bg-white rounded shadow-sm">
+                        <div class="d-md-flex justify-content-between">
+                            <div>
+                                <h4>Bachelor Of Technology (B.Tech) - Computer Science</h4>
+                                <h5 class="text-primary">Keshav Memorial Institute of Technology</h5>
+                            </div>
+                            <div class="text-md-end mt-3 mt-md-0">
+                                <span class="badge bg-primary">9.4/10</span>
+                                <p class="text-muted">2022 - 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-card p-4 mb-4 bg-white rounded shadow-sm">
+                        <div class="d-md-flex justify-content-between">
+                            <div>
+                                <h4>Telangana State Board of Intermediate Education</h4>
+                                <h5 class="text-primary">Narayana Junior College</h5>
+                            </div>
+                            <div class="text-md-end mt-3 mt-md-0">
+                                <span class="badge bg-primary">98.8%</span>
+                                <p class="text-muted">2020 - 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-card p-4 mb-4 bg-white rounded shadow-sm">
+                        <div class="d-md-flex justify-content-between">
+                            <div>
+                                <h4>SSC - Secondary School Certificate</h4>
+                                <h5 class="text-primary">Sri Chaitanya School</h5>
+                            </div>
+                            <div class="text-md-end mt-3 mt-md-0">
+                                <span class="badge bg-primary">10/10</span>
+                                <p class="text-muted">2019 - 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-container bg-light-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Get In Touch</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="mb-5">
+                        <a href="tel:+916303320779" class="text-decoration-none me-4">
+                            <i class="bi bi-telephone social-icon"></i>
+                        </a>
+                        <a href="mailto:nithya.etoori@gmail.com" class="text-decoration-none me-4">
+                            <i class="bi bi-envelope social-icon"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/nithya-etoori" target="_blank" class="text-decoration-none me-4">
+                            <i class="bi bi-linkedin social-icon"></i>
+                        </a>
+                        <a href="https://github.com/butterflypaw" target="_blank" class="text-decoration-none me-4">
+                            <i class="bi bi-github social-icon"></i>
+                        </a>
+                        <a href="https://leetcode.com/nithya_etoori/" target="_blank" class="text-decoration-none">
+                            <i class="bi bi-code-square social-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEEDBACK SECTION -->
+    <section id="feedback" class="section-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Feedback</h2>
+                    <p class="lead">I would love to hear your feedback</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="name"
+                                          required
+                                        >
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input
+                                          type="email"
+                                          class="form-control"
+                                          id="email"
+                                          required
+                                        >
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="subject"
+                                    >
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea
+                                      class="form-control"
+                                      id="message"
+                                      rows="5"
+                                      required
+                                    ></textarea>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="submit" class="btn btn-primary">
+                                        Submit Feedback
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Nithya Etoori. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+</body>
+</html>
